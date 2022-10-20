@@ -1,0 +1,19 @@
+﻿<Window x:Class="WebAPIClientWPF.Windows.ResponseWaiting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebAPIClientWPF.Windows"
+        mc:Ignorable="d"
+        SizeToContent="Height"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        Title="ResponseWaiting" Height="450" Width="400" Background="Transparent" AllowsTransparency="True">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Image x:Name="imageGif" gif:ImageBehavior.RepeatBehavior="Forever" gif:ImageBehavior.AnimatedSource="Images\loading-gif.gif" Source="Images\loading-gif.gif" Height="300" Width="auto"/>
+        </StackPanel>
+    </Grid>
+</Window>

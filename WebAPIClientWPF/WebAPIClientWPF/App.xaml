@@ -1,0 +1,48 @@
+﻿<Application x:Class="WebAPIClientWPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WebAPIClientWPF"
+             StartupUri="Windows/Authorization.xaml">
+    <Application.Resources>
+        <Style x:Key="Elements">
+            <Setter Property="Button.FontFamily" Value="Verdana" />
+            <Setter Property="Button.Width" Value="Auto" />
+            <Setter Property="Button.Height" Value="30" />
+            <Setter Property="Button.FontSize" Value="15" />
+            <Setter Property="Button.Margin" Value="5,5,5,5" />
+        </Style>
+        <Style x:Key="AuthorizationButtons" BasedOn="{StaticResource Elements}">
+            <Setter Property="Button.FontWeight" Value="Bold" />
+        </Style>
+        <Style x:Key="AuthorizationLabels" BasedOn="{StaticResource Elements}">
+            <Setter Property="Label.FontWeight" Value="Bold" />
+            <Setter Property="Label.Margin" Value="5,5,5,0" />
+        </Style>
+        <Style x:Key="TitleLabel" BasedOn="{StaticResource Elements}">
+            <Setter Property="Label.HorizontalContentAlignment" Value="Center" />
+            <Setter Property="Label.FontSize" Value="20" />
+            <Setter Property="Label.FontWeight" Value="Bold" />
+        </Style>
+        <Style x:Key="PlainTextLabel" BasedOn="{StaticResource Elements}">
+            <Setter Property="Label.HorizontalContentAlignment" Value="Center" />
+            <Setter Property="Label.FontSize" Value="13" />
+        </Style>
+        <Style x:Key="ValueText">
+            <Setter Property="Label.HorizontalAlignment" Value="Left" />
+            <Setter Property="Label.VerticalAlignment" Value="Center" />
+            <Setter Property="Label.FontSize" Value="13" />
+            <Setter Property="Label.FontFamily" Value="Verdana" />
+        </Style>
+        <Style x:Key="PopupText" BasedOn="{StaticResource Elements}">
+            <Setter Property="TextBlock.FontWeight" Value="Bold" />
+            <Setter Property="TextBlock.FontSize" Value="12" />
+            <Setter Property="TextBlock.Foreground" Value="Red" />
+        </Style>
+        <Style x:Key="Popup">
+            <Setter Property="Popup.StaysOpen" Value="False" />
+            <Setter Property="Popup.Placement" Value="Bottom" />
+            <Setter Property="Popup.MaxWidth" Value="180" />
+            <Setter Property="Popup.AllowsTransparency" Value="True" />
+        </Style>
+    </Application.Resources>
+</Application>
